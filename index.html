@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alyukovnet.ru</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2635b9b970.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Alyukovnet</h1>
+    
+    <section id="about">
+        <p>Developer, Designer sometimes</p>
+        <p>Member of the CTF team YummyTacos</p>
+        <p>Python, C++, JS, PHP</p>
+    </section>
+
+    <section id="links">
+        <p id="tg">telegram: <a href="tg://resolve?domain=alyukovnet">alyukovnet</a></p>
+        <p id="vk">vkontakte: <a href="https://vk.com/alyukovnet" target="_blank">alyukovnet</a></p>
+        <p id="inst">instagram: <a href="https://instagram.com/alyukovnet" target="_blank">alyukovnet</a></p>
+        <p id="github">github: <a href="https://github.com/alyukovnet" target="_blank">alyukovnet</a></p>
+    </section>
+
+    <script>
+        const color = ['#000035', '#3c003b', '#003b48', '#320042'];
+        const r = Math.floor(Math.random() * color.length);
+        document.getElementsByTagName("body")[0].style.borderColor = color[r];
+        document.getElementsByTagName("h1")[0].style.color = color[r];
+    </script>
+</body>
+</html>

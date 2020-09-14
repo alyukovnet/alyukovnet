@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['Библиотека_20string_33',['Библиотека String',['../index.html',1,'']]],
-  ['Результат_34',['Результат',['../md__r_e_s_u_l_t.html',1,'']]],
-  ['Лабораторная_20работа_206_2e_20Вариант_2032_2e_35',['Лабораторная работа 6. Вариант 32.',['../md__t_a_s_k.html',1,'']]]
+  ['_7ebinstr_35',['~BinStr',['../classown_1_1_bin_str.html#a22b90dfad8c7e3a77101ed1a243c3966',1,'own::BinStr']]],
+  ['_7eidentstr_36',['~IdentStr',['../classown_1_1_ident_str.html#a16130ae9dc4a386e85a6aede040c3852',1,'own::IdentStr']]],
+  ['_7estring_37',['~String',['../classown_1_1_string.html#a3b2b668d1b77561f846490566ec6edfb',1,'own::String']]]
 ];

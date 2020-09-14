@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+         src : url("fonts/fontawesome-webfont.eot");
+         src : url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+               url("fonts/fontawesome-webfont.woff2") format("woff2"),
+               url("fonts/fontawesome-webfont.woff") format("woff"),
+               url("fonts/fontawesome-webfont.ttf") format("truetype"),
+               url("fonts/fontawesome-webfont.svg?#fontawesomeregular") format("svg");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 50px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h1:hover {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        border-width: 30px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+}
+
+section#about {
+    text-align: center;
+    font-size: 1em;
+}
+
+section#links {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1em;
+}
+
+section#links p {
+    flex: 250px;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+section#links p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section#links p:hover {
+    -webkit-box-shadow: 100px 100px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 100px 100px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 100px 100px rgba(0, 0, 0, 0.3) inset;
+}
+
+section#links p:hover a {
+    text-decoration: underline;
+}
+
+section#links p:before {
+    font-family: FontAwesome, serif;
+    padding-right: .5em;
+}
+
+p#tg {
+    background: #276899;
+}
+
+p#tg:before {
+    content: "\f2c6";
+}
+
+p#vk {
+    background: #4A76A8;
+}
+
+p#vk:before {
+    content: "\f189";
+}
+
+p#inst {
+    background: #CD2C89;
+}
+
+p#inst:before {
+    content: "\f16d";
+}
+
+p#github {
+    background: #24292E;
+}
+
+p#github:before {
+    content: "\f113";
+}

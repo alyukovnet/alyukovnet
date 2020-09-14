@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Библиотека String: Класс own::BinStr</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Библиотека String
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Own String library. Лабораторная работа ФБИТ ИТМО</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>own</b></li><li class="navelem"><a class="el" href="classown_1_1_bin_str.html">BinStr</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classown_1_1_bin_str-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс own::BinStr</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Производный от "Строка" класс "Битовая строка".  
+ <a href="classown_1_1_bin_str.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="binstr_8h_source.html">binstr.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:own::BinStr:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classown_1_1_bin_str.png" usemap="#own::BinStr_map" alt=""/>
+  <map id="own::BinStr_map" name="own::BinStr_map">
+<area href="classown_1_1_string.html" title="Базовый класс &quot;Строка&quot;." alt="own::String" shape="rect" coords="0,0,75,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ad7314f6fe7762f7e71d2217898cd37d5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5">SIGN</a> { <a class="el" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5aa25e78b702d5d6f891e1511c21b88134">POSITIVE</a> = 1, 
+<a class="el" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5a567c66de17282f835599000f3f2e180e">NEGATIVE</a> = 0
+ }</td></tr>
+<tr class="memdesc:ad7314f6fe7762f7e71d2217898cd37d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Знак двочного числа  <a href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7314f6fe7762f7e71d2217898cd37d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8736b2482115861cc93b666d0f381ee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">BinStr</a> (int=0)</td></tr>
+<tr class="separator:a8736b2482115861cc93b666d0f381ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bda27a04f184a0287f95148325d848"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a33bda27a04f184a0287f95148325d848">BinStr</a> (const char *)</td></tr>
+<tr class="separator:a33bda27a04f184a0287f95148325d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23731fd9fd9688a692b1546fa59cd13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#aa23731fd9fd9688a692b1546fa59cd13">BinStr</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:aa23731fd9fd9688a692b1546fa59cd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b90dfad8c7e3a77101ed1a243c3966"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a22b90dfad8c7e3a77101ed1a243c3966">~BinStr</a> ()</td></tr>
+<tr class="separator:a22b90dfad8c7e3a77101ed1a243c3966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1d5f42319bffdc915e79bc7a237b7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a1a1d5f42319bffdc915e79bc7a237b7f">getSign</a> () const</td></tr>
+<tr class="separator:a1a1d5f42319bffdc915e79bc7a237b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc0855730c45c2e6cf02175d9b6c4b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#addc0855730c45c2e6cf02175d9b6c4b8">isPositive</a> () const</td></tr>
+<tr class="separator:addc0855730c45c2e6cf02175d9b6c4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee64fc5387153b2070e1705f5a1c0f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#adee64fc5387153b2070e1705f5a1c0f3">isNegative</a> () const</td></tr>
+<tr class="separator:adee64fc5387153b2070e1705f5a1c0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbe4f35186c303ca61da830542f89d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a6fbe4f35186c303ca61da830542f89d2">getUnsignedNum</a> () const</td></tr>
+<tr class="separator:a6fbe4f35186c303ca61da830542f89d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a97d64bd476b79770cb36530368f71e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a7a97d64bd476b79770cb36530368f71e">getNum</a> () const</td></tr>
+<tr class="separator:a7a97d64bd476b79770cb36530368f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6d0c69cd28967bf649ceb15d11c993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a0b6d0c69cd28967bf649ceb15d11c993">operator=</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:a0b6d0c69cd28967bf649ceb15d11c993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classown_1_1_string"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classown_1_1_string')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classown_1_1_string.html">own::String</a></td></tr>
+<tr class="memitem:a87a7b08c78bd69414a0d1d799dd465a6 inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a87a7b08c78bd69414a0d1d799dd465a6">String</a> (int=0)</td></tr>
+<tr class="separator:a87a7b08c78bd69414a0d1d799dd465a6 inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5657306c55ee81b97e1c18c6dcc45e98 inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a5657306c55ee81b97e1c18c6dcc45e98">String</a> (const char *)</td></tr>
+<tr class="separator:a5657306c55ee81b97e1c18c6dcc45e98 inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a5d2c1511dbe4bd4c6615a8b23b3c6 inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a67a5d2c1511dbe4bd4c6615a8b23b3c6">String</a> (char)</td></tr>
+<tr class="separator:a67a5d2c1511dbe4bd4c6615a8b23b3c6 inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7020f8a828f65ed10aefce322ffd046d inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a7020f8a828f65ed10aefce322ffd046d">String</a> (const <a class="el" href="classown_1_1_string.html">String</a> &amp;)</td></tr>
+<tr class="separator:a7020f8a828f65ed10aefce322ffd046d inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2b668d1b77561f846490566ec6edfb inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a3b2b668d1b77561f846490566ec6edfb">~String</a> ()</td></tr>
+<tr class="separator:a3b2b668d1b77561f846490566ec6edfb inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1657e69085d6ad5e6d932485910e871 inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#aa1657e69085d6ad5e6d932485910e871">getStr</a> () const</td></tr>
+<tr class="separator:aa1657e69085d6ad5e6d932485910e871 inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3fef1b1e0d676b50b0396ba0b4c764f inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#ad3fef1b1e0d676b50b0396ba0b4c764f">getLen</a> () const</td></tr>
+<tr class="separator:ad3fef1b1e0d676b50b0396ba0b4c764f inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f7be14a45689051a2f08d0de1a718d inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#ae9f7be14a45689051a2f08d0de1a718d">show</a> () const</td></tr>
+<tr class="separator:ae9f7be14a45689051a2f08d0de1a718d inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf359aa0cef0c4f79e1ef430b383a63 inherit pub_methods_classown_1_1_string"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#a2bf359aa0cef0c4f79e1ef430b383a63">getChar</a> (int) const</td></tr>
+<tr class="separator:a2bf359aa0cef0c4f79e1ef430b383a63 inherit pub_methods_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:acaebaa9af6015ad58e3f0551464b0b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classown_1_1_bin_str.html">BinStr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#acaebaa9af6015ad58e3f0551464b0b18">operator^</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;, const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:acaebaa9af6015ad58e3f0551464b0b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34ffdef393619867378037ee1e78a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classown_1_1_bin_str.html">BinStr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#aa34ffdef393619867378037ee1e78a91">operator^</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;, int)</td></tr>
+<tr class="separator:aa34ffdef393619867378037ee1e78a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10c2978cea18759c3addb3f98364eb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classown_1_1_bin_str.html">BinStr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#aa10c2978cea18759c3addb3f98364eb2">operator^</a> (int, const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:aa10c2978cea18759c3addb3f98364eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089e271689ab34dccf877a74dea3624d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a089e271689ab34dccf877a74dea3624d">operator==</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;, const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:a089e271689ab34dccf877a74dea3624d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8313362c0947bc020a2e7561576d193f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#a8313362c0947bc020a2e7561576d193f">operator==</a> (const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;, int)</td></tr>
+<tr class="separator:a8313362c0947bc020a2e7561576d193f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54f83c7417f2497835a89d59549e4a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_bin_str.html#aa54f83c7417f2497835a89d59549e4a6">operator==</a> (int, const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;)</td></tr>
+<tr class="separator:aa54f83c7417f2497835a89d59549e4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_attribs_classown_1_1_string"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classown_1_1_string')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="classown_1_1_string.html">own::String</a></td></tr>
+<tr class="memitem:aa53daaaa69d5b3bf04f618c5a27341db inherit pro_attribs_classown_1_1_string"><td class="memItemLeft" align="right" valign="top"><a id="aa53daaaa69d5b3bf04f618c5a27341db"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a></td></tr>
+<tr class="memdesc:aa53daaaa69d5b3bf04f618c5a27341db inherit pro_attribs_classown_1_1_string"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина строки <br /></td></tr>
+<tr class="separator:aa53daaaa69d5b3bf04f618c5a27341db inherit pro_attribs_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fca34b01a86ddc9a6c3c7bfcfb0e5f inherit pro_attribs_classown_1_1_string"><td class="memItemLeft" align="right" valign="top"><a id="ae2fca34b01a86ddc9a6c3c7bfcfb0e5f"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a></td></tr>
+<tr class="memdesc:ae2fca34b01a86ddc9a6c3c7bfcfb0e5f inherit pro_attribs_classown_1_1_string"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адрес динамически выделенной памяти для размещения символов строки <br /></td></tr>
+<tr class="separator:ae2fca34b01a86ddc9a6c3c7bfcfb0e5f inherit pro_attribs_classown_1_1_string"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Производный от "Строка" класс "Битовая строка". </p>
+<p>Строки данного класса могут содержать только символы '0' или '1'. Если в составе инициализирующей строки будут встречены любые символы, отличные от допустимых, "Битовая строка" принимает нулевое значение. Содержимое данных строк рассматривается как двоичное число. Отрицательные числа хранятся в дополнительном коде. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8h_source.html">binstr.h</a> строка <a class="el" href="binstr_8h_source.html#l00024">24</a></p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="ad7314f6fe7762f7e71d2217898cd37d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7314f6fe7762f7e71d2217898cd37d5">&#9670;&nbsp;</a></span>SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5">own::BinStr::SIGN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Знак двочного числа </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ad7314f6fe7762f7e71d2217898cd37d5aa25e78b702d5d6f891e1511c21b88134"></a>POSITIVE&#160;</td><td class="fielddoc"><p>Положительное число </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7314f6fe7762f7e71d2217898cd37d5a567c66de17282f835599000f3f2e180e"></a>NEGATIVE&#160;</td><td class="fielddoc"><p>Отрицательное число </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8h_source.html">binstr.h</a> строка <a class="el" href="binstr_8h_source.html#l00051">51</a></p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5aa25e78b702d5d6f891e1511c21b88134">POSITIVE</a> = 1,  <span class="comment">///&lt; Положительное число</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span>        <a class="code" href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5a567c66de17282f835599000f3f2e180e">NEGATIVE</a> = 0  <span class="comment">///&lt; Отрицательное число</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span>    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a8736b2482115861cc93b666d0f381ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8736b2482115861cc93b666d0f381ee6">&#9670;&nbsp;</a></span>BinStr() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">own::BinStr::BinStr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Конструктор без параметров (длина строки = 0) или принимающий длину строки </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Длина строки (по умолчанию 0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00016">16</a></p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                      : <a class="code" href="classown_1_1_string.html#a87a7b08c78bd69414a0d1d799dd465a6">String</a>(val)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;BinStr::BinStr(int val) : Stroka(val), val=&quot;</span> &lt;&lt; val &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a33bda27a04f184a0287f95148325d848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bda27a04f184a0287f95148325d848">&#9670;&nbsp;</a></span>BinStr() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">own::BinStr::BinStr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Конструктор, принимающий в качестве параметра Си-строку (заканчивается нулевым байтом) </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Си-строка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00021">21</a></p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                              : <a class="code" href="classown_1_1_string.html#a87a7b08c78bd69414a0d1d799dd465a6">String</a>(Str)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (!((<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] &lt;= <span class="charliteral">&#39;9&#39;</span>))) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Bad symbol, pCh[0]=&quot;</span> &lt;&lt; <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>) <span class="keyword">delete</span>[] <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> + 1];</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a>; i++) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span>(!(<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i] &gt;= <span class="charliteral">&#39;0&#39;</span>&amp;&amp; <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i] &lt;= <span class="charliteral">&#39;9&#39;</span>)) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Bad string, pCh[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]=&quot;</span> &lt;&lt; <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>) <span class="keyword">delete</span>[] <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> + 1];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;BinStr::BinStr( char* Str):String(Str)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;fun1=&quot; &lt;&lt; fun1() &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa23731fd9fd9688a692b1546fa59cd13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23731fd9fd9688a692b1546fa59cd13">&#9670;&nbsp;</a></span>BinStr() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">own::BinStr::BinStr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Конструктор копирования </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>Исходный объект </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00046">46</a></p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                 : <a class="code" href="classown_1_1_string.html#a87a7b08c78bd69414a0d1d799dd465a6">String</a>(from)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;BinStr::BinStr(const BinStr&amp; from) : String(from)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a22b90dfad8c7e3a77101ed1a243c3966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b90dfad8c7e3a77101ed1a243c3966">&#9670;&nbsp;</a></span>~BinStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">own::BinStr::~BinStr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Деструктор </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00051">51</a></p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;BinStr::~BinStr()&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a7a97d64bd476b79770cb36530368f71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a97d64bd476b79770cb36530368f71e">&#9670;&nbsp;</a></span>getNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int own::BinStr::getNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Преобразование строки в число </p><dl class="section return"><dt>Возвращает</dt><dd>Число </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00084">84</a></p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> tmp = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classown_1_1_bin_str.html#addc0855730c45c2e6cf02175d9b6c4b8">isPositive</a>()) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a>; i++) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            tmp *= 2;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            tmp += <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i]-<span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a>; i++) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            tmp *= 2;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            tmp += <span class="charliteral">&#39;1&#39;</span>-<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        tmp = -tmp - 1;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a1d5f42319bffdc915e79bc7a237b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1d5f42319bffdc915e79bc7a237b7f">&#9670;&nbsp;</a></span>getSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int own::BinStr::getSign </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Получение знака двоичного числа </p><dl class="section return"><dt>Возвращает</dt><dd>Знак числа SIGN::POSITIVE или SIGN::NEGATIVE </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00056">56</a></p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[0] == <span class="charliteral">&#39;1&#39;</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> SIGN::NEGATIVE;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> SIGN::POSITIVE;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fbe4f35186c303ca61da830542f89d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbe4f35186c303ca61da830542f89d2">&#9670;&nbsp;</a></span>getUnsignedNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int own::BinStr::getUnsignedNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Преобразование строки в беззнаковое число </p><dl class="section return"><dt>Возвращает</dt><dd>Беззнаковое число </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00074">74</a></p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> tmp = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a>; i++) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        tmp *= 2;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        tmp += <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>[i]-<span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adee64fc5387153b2070e1705f5a1c0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee64fc5387153b2070e1705f5a1c0f3">&#9670;&nbsp;</a></span>isNegative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool own::BinStr::isNegative </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверка на отрицательное число </p><dl class="section return"><dt>Возвращает</dt><dd>Является ли число отрицательным </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00069">69</a></p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classown_1_1_bin_str.html#a1a1d5f42319bffdc915e79bc7a237b7f">getSign</a>() == SIGN::NEGATIVE;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="addc0855730c45c2e6cf02175d9b6c4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc0855730c45c2e6cf02175d9b6c4b8">&#9670;&nbsp;</a></span>isPositive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool own::BinStr::isPositive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверка на положительное число </p><dl class="section return"><dt>Возвращает</dt><dd>Является ли число положительным </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00064">64</a></p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classown_1_1_bin_str.html#a1a1d5f42319bffdc915e79bc7a237b7f">getSign</a>() == SIGN::POSITIVE;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0b6d0c69cd28967bf649ceb15d11c993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6d0c69cd28967bf649ceb15d11c993">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp; own::BinStr::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>Ds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Оператор присваивания </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00102">102</a></p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (&amp;Ds != <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">delete</span>[] <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> = strlen(Ds.pCh);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">len</a> + 1];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        strcpy(<a class="code" href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">pCh</a>, Ds.pCh);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;BinStr&amp; BinStr::operator=(const BinStr&amp; Ds)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a089e271689ab34dccf877a74dea3624d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089e271689ab34dccf877a74dea3624d">&#9670;&nbsp;</a></span>operator== <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проверка равенства строк как бинарных чисел </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00177">177</a></p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                         {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> pobj1.getNum() == pobj2.getNum();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8313362c0947bc020a2e7561576d193f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8313362c0947bc020a2e7561576d193f">&#9670;&nbsp;</a></span>operator== <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проверка равенства бинарной строки и числа </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00181">181</a></p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                               {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">return</span> pobj1.getNum() == pobj2;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa54f83c7417f2497835a89d59549e4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54f83c7417f2497835a89d59549e4a6">&#9670;&nbsp;</a></span>operator== <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int operator== </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проверка равенства бинарной строки и числа </p>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00185">185</a></p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                               {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> pobj1 == pobj2.getNum();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acaebaa9af6015ad58e3f0551464b0b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaebaa9af6015ad58e3f0551464b0b18">&#9670;&nbsp;</a></span>operator^ <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classown_1_1_bin_str.html">BinStr</a> operator^ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Операция "исключающее или" </p><dl class="section return"><dt>Возвращает</dt><dd>Сумма по модулю 2 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00114">114</a></p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                           {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (pobj1.len &gt;= pobj2.len) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">BinStr</a> tmp(pobj1.len);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">int</span> i = pobj1.len - 1;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">int</span> j = pobj2.len - 1;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">for</span> (; j&gt;=0; i--, j--) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            tmp.pCh[i] = (pobj1.pCh[i] == pobj2.pCh[j]) ? <span class="charliteral">&#39;0&#39;</span> : <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">for</span> (; i&gt;=0; i--) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            tmp.pCh[i] = pobj1.pCh[i];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">BinStr</a> tmp(pobj2.len);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">int</span> i = pobj2.len - 1;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">int</span> j = pobj1.len - 1;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> (; j&gt;=0; i--, j--) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            tmp.pCh[i] = (pobj2.pCh[i] == pobj1.pCh[j]) ? <span class="charliteral">&#39;0&#39;</span> : <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">for</span> (; i&gt;=0; i--) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            tmp.pCh[i] = pobj2.pCh[i];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa34ffdef393619867378037ee1e78a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34ffdef393619867378037ee1e78a91">&#9670;&nbsp;</a></span>operator^ <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classown_1_1_bin_str.html">BinStr</a> operator^ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Операция "исключающее или" </p><dl class="section return"><dt>Возвращает</dt><dd>Сумма по модулю 2 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00173">173</a></p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                 {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> pobj2^pobj1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa10c2978cea18759c3addb3f98364eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10c2978cea18759c3addb3f98364eb2">&#9670;&nbsp;</a></span>operator^ <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classown_1_1_bin_str.html">BinStr</a> operator^ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pobj1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classown_1_1_bin_str.html">BinStr</a> &amp;&#160;</td>
+          <td class="paramname"><em>pobj2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Операция "исключающее или" </p><dl class="section return"><dt>Возвращает</dt><dd>Сумма по модулю 2 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="binstr_8cpp_source.html">binstr.cpp</a> строка <a class="el" href="binstr_8cpp_source.html#l00140">140</a></p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                                 {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">int</span> pobj1len = 0;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">int</span> pobj1i = pobj1;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">for</span> (; pobj1i != 0; pobj1i &gt;&gt;= 1, pobj1len++);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (pobj1len &gt;= pobj2.len) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">BinStr</a> tmp(pobj1len);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordtype">int</span> i = pobj1len - 1;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">int</span> j = pobj2.len - 1;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">for</span> (; j&gt;=0; i--, j--) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            tmp.pCh[i] = ((pobj1 % 2) == (pobj2.pCh[j]-<span class="charliteral">&#39;0&#39;</span>)) ? <span class="charliteral">&#39;0&#39;</span> : <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            pobj1 &gt;&gt; 1;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span> (; i&gt;=0; i--) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            tmp.pCh[i] = (pobj1 % 2 == 0) ? <span class="charliteral">&#39;0&#39;</span> : <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            pobj1 &gt;&gt; 1;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">BinStr</a> tmp(pobj2.len);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">int</span> i = pobj2.len - 1;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">int</span> j = pobj1len - 1;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">for</span> (; j&gt;=0; i--, j--) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            tmp.pCh[i] = ((pobj2.pCh[i]-<span class="charliteral">&#39;0&#39;</span>) == (pobj1 % 2)) ? <span class="charliteral">&#39;0&#39;</span> : <span class="charliteral">&#39;1&#39;</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            pobj1 &gt;&gt; 1;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span> (; i&gt;=0; i--) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            tmp.pCh[i] = pobj2.pCh[i];</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>string/include/own/<a class="el" href="binstr_8h_source.html">binstr.h</a></li>
+<li>string/src/<a class="el" href="binstr_8cpp_source.html">binstr.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<div class="ttc" id="aclassown_1_1_bin_str_html_a1a1d5f42319bffdc915e79bc7a237b7f"><div class="ttname"><a href="classown_1_1_bin_str.html#a1a1d5f42319bffdc915e79bc7a237b7f">own::BinStr::getSign</a></div><div class="ttdeci">int getSign() const</div><div class="ttdef"><b>Definition:</b> <a href="binstr_8cpp_source.html#l00056">binstr.cpp:56</a></div></div>
+<div class="ttc" id="aclassown_1_1_bin_str_html_ad7314f6fe7762f7e71d2217898cd37d5a567c66de17282f835599000f3f2e180e"><div class="ttname"><a href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5a567c66de17282f835599000f3f2e180e">own::BinStr::NEGATIVE</a></div><div class="ttdeci">@ NEGATIVE</div><div class="ttdoc">Отрицательное число</div><div class="ttdef"><b>Definition:</b> <a href="binstr_8h_source.html#l00054">binstr.h:53</a></div></div>
+<div class="ttc" id="aclassown_1_1_bin_str_html_a8736b2482115861cc93b666d0f381ee6"><div class="ttname"><a href="classown_1_1_bin_str.html#a8736b2482115861cc93b666d0f381ee6">own::BinStr::BinStr</a></div><div class="ttdeci">BinStr(int=0)</div><div class="ttdef"><b>Definition:</b> <a href="binstr_8cpp_source.html#l00016">binstr.cpp:16</a></div></div>
+<div class="ttc" id="aclassown_1_1_bin_str_html_ad7314f6fe7762f7e71d2217898cd37d5aa25e78b702d5d6f891e1511c21b88134"><div class="ttname"><a href="classown_1_1_bin_str.html#ad7314f6fe7762f7e71d2217898cd37d5aa25e78b702d5d6f891e1511c21b88134">own::BinStr::POSITIVE</a></div><div class="ttdeci">@ POSITIVE</div><div class="ttdoc">Положительное число</div><div class="ttdef"><b>Definition:</b> <a href="binstr_8h_source.html#l00052">binstr.h:52</a></div></div>
+<div class="ttc" id="aclassown_1_1_bin_str_html_addc0855730c45c2e6cf02175d9b6c4b8"><div class="ttname"><a href="classown_1_1_bin_str.html#addc0855730c45c2e6cf02175d9b6c4b8">own::BinStr::isPositive</a></div><div class="ttdeci">bool isPositive() const</div><div class="ttdef"><b>Definition:</b> <a href="binstr_8cpp_source.html#l00064">binstr.cpp:64</a></div></div>
+<div class="ttc" id="aclassown_1_1_string_html_ae2fca34b01a86ddc9a6c3c7bfcfb0e5f"><div class="ttname"><a href="classown_1_1_string.html#ae2fca34b01a86ddc9a6c3c7bfcfb0e5f">own::String::pCh</a></div><div class="ttdeci">char * pCh</div><div class="ttdoc">Адрес динамически выделенной памяти для размещения символов строки</div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00020">string.h:20</a></div></div>
+<div class="ttc" id="aclassown_1_1_string_html_a87a7b08c78bd69414a0d1d799dd465a6"><div class="ttname"><a href="classown_1_1_string.html#a87a7b08c78bd69414a0d1d799dd465a6">own::String::String</a></div><div class="ttdeci">String(int=0)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00015">string.cpp:15</a></div></div>
+<div class="ttc" id="aclassown_1_1_string_html_aa53daaaa69d5b3bf04f618c5a27341db"><div class="ttname"><a href="classown_1_1_string.html#aa53daaaa69d5b3bf04f618c5a27341db">own::String::len</a></div><div class="ttdeci">int len</div><div class="ttdoc">Длина строки</div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00019">string.h:19</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

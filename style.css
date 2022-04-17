@@ -67,6 +67,15 @@ section#links p:hover a {
     text-decoration: underline;
 }
 
+.warning-asterisk {
+    color: #f00;
+}
+
+section#warning {
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
 @media screen and (max-width: 720px) {
     .h1__br {
         display: initial;
